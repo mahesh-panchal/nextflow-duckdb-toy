@@ -48,7 +48,8 @@ process DUCKDB {
             JOIN filter
             ON characters.Type = filter.Type
         ) TO '/dev/stdout';
-    END_SQL 
+    END_SQL
+    # The output can also be written directly to file instead of pipeing, but it's convenient to play with output
     """
 
     output:
